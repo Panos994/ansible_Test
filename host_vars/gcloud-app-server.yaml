@@ -1,0 +1,10 @@
+app:
+  env:
+    server.port: "{{app_port}}"
+    spring.datasource.username: appuser
+    spring.datasource.password: apppassword
+    spring.datasource.url: jdbc:postgresql://4.211.249.239:5432/appdb
+
+service:
+  workingdir: "/home/it2021154/Devops_test"
+  execstart: "java -jar target/demo-0.0.1-SNAPSHOT.jar"
